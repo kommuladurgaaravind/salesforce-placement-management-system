@@ -1,23 +1,27 @@
 import { LightningElement } from 'lwc';
 
 export default class PlacementHome extends LightningElement {
-    todayDate = new Date().toLocaleDateString();
+
     studentName = 'Kommula Durga Aravind';
+
     rollNumber = '23PA1A0484';
+
     department = 'ECE';
 
-    numCompanies = 25;
-    numJobs = 63;
-    numApplications = 5;
+    message='';
 
-    welcomeMessage = '';
-    applicationStatus = 'Not Applied';
+    status='Not Applied';
 
-    handleShowMessage() {
-        this.welcomeMessage = 'Welcome to Salesforce Development.';
+    showMessage(){
+
+        this.message='Welcome to Salesforce Development';
+
     }
 
-    handleToggleStatus() {
-        this.applicationStatus = this.applicationStatus === 'Not Applied' ? 'Applied' : 'Not Applied';
+    applyJob(){
+
+        this.status='Applied';
+
     }
+
 }
