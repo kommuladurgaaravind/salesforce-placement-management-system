@@ -124,19 +124,21 @@ Lightning Web Components (LWC) is Salesforce's modern user interface framework b
 
 ### 2. What did you build?
 
-I built my first Lightning Web Component named **placementHome**. The component displays a welcome message, student details, application status, and a simple placement dashboard. It also demonstrates data binding and JavaScript event handling using buttons. :contentReference[oaicite:1]{index=1}
+I built my first Lightning Web Component named **placementHome**. The component displays a welcome message, student details, application status, and a simple placement dashboard. It also demonstrates data binding and JavaScript event handling using buttons. 
 
 ### 3. Which file contains HTML?
 
-The **`placementHome.html`** file contains the HTML. It is responsible for defining the user interface, including the layout, text, and buttons. :contentReference[oaicite:2]{index=2}
+The **`placementHome.html`** file contains the HTML. It is responsible for defining the user interface, including the layout, text, and buttons. 
 
 ### 4. Which file contains JavaScript?
 
-The **`placementHome.js`** file contains the JavaScript. It manages variables, component logic, event handling, and communication within the Lightning Web Component. :contentReference[oaicite:3]{index=3}
+The **`placementHome.js`** file contains the JavaScript. It manages variables, component logic, event handling, and communication within the Lightning Web Component. 
 
 ### 5. What did you learn today?
 
-Today, I learned the fundamentals of Lightning Web Components, including component structure, data binding, JavaScript event handling, deployment to a Lightning Page, and how LWC will interact with Apex in future projects. :contentReference[oaicite:4]{index=4}
+Today, I learned the fundamentals of Lightning Web Components, including component structure, data binding, JavaScript event handling, deployment to a Lightning Page, and how LWC will interact with Apex in future projects. 
+
+---
 ## 📖 Key Concept
 
 Lightning Web Components (LWC) is Salesforce's modern UI framework based on web standards such as HTML, JavaScript, and CSS. It enables developers to build fast, reusable, and maintainable user interfaces that interact with Salesforce data through Apex.
