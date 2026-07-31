@@ -1,0 +1,24 @@
+<template>
+    <div class="container">
+        <h1>Placement Portal</h1>
+        <p>Today's Date: {todayDate}</p>
+        <p>Welcome to Vishnu Placement Portal</p>
+
+        <h2>Welcome Student</h2>
+        <p>Student Name : {studentName}</p>
+        <p>Roll Number : {rollNumber}</p>
+        <p>Department : {department}</p>
+
+        <div class="stats">
+            <p>Number of Companies : {numCompanies}</p>
+            <p>Number of Jobs : {numJobs}</p>
+            <p>Applications Submitted : {numApplications}</p>
+        </div>
+
+        <button onclick={handleShowMessage}>Show Welcome Message</button>
+        <p>{welcomeMessage}</p>
+
+        <button onclick={handleToggleStatus}>Toggle Application Status</button>
+        <p>Status : {applicationStatus}</p>
+    </div>
+</template>
