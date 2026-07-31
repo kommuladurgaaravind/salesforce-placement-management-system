@@ -1,24 +1,37 @@
 <template>
-    <div class="container">
-        <h1>Placement Portal</h1>
-        <p>Today's Date: {todayDate}</p>
-        <p>Welcome to Vishnu Placement Portal</p>
 
-        <h2>Welcome Student</h2>
-        <p>Student Name : {studentName}</p>
-        <p>Roll Number : {rollNumber}</p>
-        <p>Department : {department}</p>
+    <lightning-card title="Placement Portal">
 
-        <div class="stats">
-            <p>Number of Companies : {numCompanies}</p>
-            <p>Number of Jobs : {numJobs}</p>
-            <p>Applications Submitted : {numApplications}</p>
+        <div class="slds-p-around_medium">
+
+            <p><b>Student Name :</b> {studentName}</p>
+
+            <p><b>Roll Number :</b> {rollNumber}</p>
+
+            <p><b>Department :</b> {department}</p>
+
+            <br/>
+
+            <lightning-button
+                label="Show Welcome Message"
+                onclick={showMessage}>
+            </lightning-button>
+
+            <br/><br/>
+
+            <p>{message}</p>
+
+            <br/>
+
+            <p><b>Status :</b> {status}</p>
+
+            <lightning-button
+                label="Apply"
+                onclick={applyJob}>
+            </lightning-button>
+
         </div>
 
-        <button onclick={handleShowMessage}>Show Welcome Message</button>
-        <p>{welcomeMessage}</p>
+    </lightning-card>
 
-        <button onclick={handleToggleStatus}>Toggle Application Status</button>
-        <p>Status : {applicationStatus}</p>
-    </div>
 </template>
