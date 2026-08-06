@@ -47,3 +47,6 @@ By completing this sprint, I learned to:
 * SOQL
 * Salesforce Developer Console
 * GitHub
+
+## Test Result
+<img width="1600" height="860" alt="WhatsApp Image 2026-08-06 at 3 56 59 PM" src="https://github.com/user-attachments/assets/ef191920-f677-45f6-aa8a-1fbeb78f89e2" />
