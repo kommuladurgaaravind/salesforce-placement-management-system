@@ -1,0 +1,64 @@
+# Placement Management System - Day6
+
+## 📌 Overview
+
+This project demonstrates the implementation of **Apex Triggers** using the **Trigger Handler Pattern** in Salesforce. It follows Salesforce best practices such as **Bulkification**, **Governor Limits**, and efficient use of **Sets**, **Maps**, **SOQL**, and **DML** operations.
+
+The project is based on a **Placement Management System**, where students apply for jobs and validations are performed before an application is saved.
+
+---
+
+## Features
+
+* Apex Trigger for `Application__c`
+* Trigger Handler Pattern
+* Bulk-safe Apex implementation
+* Student CGPA validation
+* Job application deadline validation
+* Duplicate application validation
+* Automatic default status assignment (`Applied`)
+* Detects application status changes using `Trigger.oldMap`
+* Follows Salesforce Governor Limits
+
+---
+
+## Business Rules
+
+* Student CGPA must be greater than or equal to the Job's minimum CGPA.
+* Students cannot apply for the same job more than once.
+* Applications cannot be submitted after the job deadline.
+* If the application status is blank, it is automatically set to **Applied**.
+* When the application status changes, the trigger processes the update logic.
+
+---
+
+## Technologies Used
+
+* Salesforce Platform
+* Apex
+* SOQL
+* Salesforce Developer Console
+* GitHub
+
+---
+
+## Learning Outcomes
+
+Through this project, I learned to:
+
+* Build Apex Triggers using the Trigger Handler pattern.
+* Write bulk-safe Apex code following Salesforce best practices.
+* Use Sets and Maps for efficient record processing.
+* Retrieve related records using Bulk SOQL.
+* Perform record validations using `addError()`.
+* Detect changes using `Trigger.oldMap`.
+* Design scalable Apex code while respecting Governor Limits.
+
+---
+
+## Future Improvements
+
+* Add email notifications for application status changes.
+* Generate Offer Letter records automatically.
+* Implement Asynchronous Apex (Future, Queueable, Batch, and Scheduled Apex).
+* Improve Apex Test Class coverage with additional test scenarios.
