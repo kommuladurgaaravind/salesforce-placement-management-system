@@ -1,0 +1,22 @@
+.eligible-jobs-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.eligible-jobs-header {
+    margin-bottom: 1.25rem;
+}
+
+.eligible-jobs-header h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #16325c;
+    margin: 0;
+}
+
+.eligible-jobs-header p {
+    color: #706e6b;
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0 0;
+}
