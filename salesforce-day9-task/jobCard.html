@@ -1,0 +1,46 @@
+<template>
+    <div class="job-card">
+        <div class="job-card__header">
+            <h3 class="job-card__company">{job.Company_Name__c}</h3>
+            <p class="job-card__role">{job.Name}</p>
+        </div>
+
+        <div class="job-card__details">
+            <div class="job-card__detail-item">
+                <lightning-icon icon-name="utility:money" size="x-small"></lightning-icon>
+                <span>{job.Package__c}</span>
+            </div>
+            <div class="job-card__detail-item">
+                <lightning-icon icon-name="utility:location" size="x-small"></lightning-icon>
+                <span>{job.Location__c}</span>
+            </div>
+        </div>
+
+        <div class="job-card__footer">
+            <template if:true={isReady}>
+                <lightning-button variant="brand" label="Apply" onclick={handleApply} class="job-card__button"></lightning-button>
+            </template>
+
+            <template if:true={isSubmitting}>
+                <div class="job-card__status">
+                    <lightning-spinner alternative-text="Submitting..." size="small"></lightning-spinner>
+                    <span>Submitting...</span>
+                </div>
+            </template>
+
+            <template if:true={isSuccess}>
+                <div class="job-card__status job-card__status--success">
+                    <lightning-icon icon-name="utility:success" size="x-small" variant="success"></lightning-icon>
+                    <span>Application Submitted</span>
+                </div>
+            </template>
+
+            <template if:true={isError}>
+                <div class="job-card__status job-card__status--error">
+                    <lightning-icon icon-name="utility:error" size="x-small" variant="error"></lightning-icon>
+                    <span>{errorMessage}</span>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>
